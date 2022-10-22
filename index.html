@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List App</h1>
+        <div class="input__zone">
+            <input type="text" name="task" id="task" placeholder="Take Your Task Here...">
+            <button class="btn__add">+</button>
+        </div>
+        
+        <div class="task__zone">
+            <h2>Task To Do</h2>
+            <div class="task__card__zone">
+
+            </div>
+            <div class="task__card task__done">
+                <label for="" class="task__check">
+                    <input type="checkbox" class="checkbox" >
+                </label>
+               
+                <div class="task__text">Some task text</div>
+                <button class="task__delete"></button>
+            </div>
+        </div>
+        <div class="info__zone">
+            <div class="info__card">
+                <div class="">All Tasks</div>
+                <div class="info__count">0</div>
+            </div>
+            <div class="info__card">
+                <div class="">Completed Tasks</div>
+                <div class="info__count">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

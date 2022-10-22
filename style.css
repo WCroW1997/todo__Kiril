@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    background: #3450a1 ;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+#task{
+    background: #183075;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+}
+
+#task::placeholder{
+    color: #3450a1;
+    font-weight: 500;
+}
+
+.task__card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background: #041955;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.task__text{
+    border-right: 2px solid #3450a1;
+    border-left: 2px solid #3450a1;
+    flex-basis: 90%;
+    padding: 15px;
+}
+
+.task__check{
+    flex-basis: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task__delete{
+    flex-basis: 5%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border: none;
+    background-color: #041955;
+    background-image: url('./img/trash.svg');
+    background-position: center center;
+    background-size: 20px;
+}
+
+.info__zone{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5c76bd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #0a1f56;
+    font-weight: 500;
+}
+
+.info__count{
+    color: red;
+    background: #041955;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.input__zone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__add{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+.task__done{
+    opacity: 0.4;
+    text-decoration: line-through;
+}
